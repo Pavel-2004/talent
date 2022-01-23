@@ -197,6 +197,35 @@ function dropDown (parentId, options){
 
 
 
+function slider(parentId, maxRange, funcCall="") {
+    const slider = document.createElement("input");
+    slider.type = "range";
+    slider.min = "0";
+    slider.max = maxRange;
+    slider.value = "30"
+    slider.classList.add("slider")
+    slider.setAttribute("onchange",funcCall);
+
+
+    const bar = document.createElement("span");
+    bar.classList.add("bar");
+
+    const fill = document.createElement("span");
+    fill.classList.add("fill");
+
+    bar.appendChild(fill);
+
+    slider.addEventListener("input", function(){setBar(fill, slider)});
+
+    setBar(fill, slider);
+
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.style.position = "relative";
+    parentDiv.appendChild(slider);
+    parentDiv.appendChild(bar);
+}
+
+
 //------------------------------------------------------------------
 const listItem = document.querySelectorAll('.list-item');
 function activeLink() {
