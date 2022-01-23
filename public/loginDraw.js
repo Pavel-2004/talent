@@ -5,6 +5,8 @@ button("button", "Login", "login()", [], 30);
 slider("slider", 100, "");
 circle("circle")
 
+slider("slider", 100, "")
+
 
 console.log("HANDMAID's TAIL")
 

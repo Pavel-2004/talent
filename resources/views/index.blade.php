@@ -36,6 +36,13 @@
     <div id="circle"></div>
 
 
+    <div class="row justify-content-center">
+        <div class="col-12" id="slider">
+
+        </div>
+    </div>
+
+
 </div>
 </body>
 <script src="buttonComponent.js"></script>
