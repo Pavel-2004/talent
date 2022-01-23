@@ -86,6 +86,34 @@ function button(parentId, text, func, specialCLasses, top = 0){
     document.getElementById(parentId).append(button)
 }
 
+
+function circle(parentId, question, answers) {
+    const mcParent = document.createElement("div");
+    const id = uniqueID();
+    const questionText = document.createElement("h2")
+    questionText.innerText = question
+    for (let i = 0; i < answers.length; i++) {
+        const answer = document.createElement("div");
+        const input = document.createElement("input");
+        const label = document.createElement("label");
+        input.type = "radio";
+        input.name = id;
+
+        const labelText = document.createTextNode(answers[i].toString());
+        label.appendChild(labelText);
+
+        answer.appendChild(input);
+        answer.appendChild(label);
+        mcParent.appendChild(answer);
+    }
+
+    mcParent.className = "mc-parent";
+
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.appendChild(questionText)
+    parentDiv.appendChild(mcParent);
+}
+
 /*
 info = {
     "text" : {
@@ -107,6 +135,8 @@ function nav(parentId, info) {
         if(i==0){
             li.classList.add("active")
         }
+
+        li.style
 
         const a = document.createElement("a");
         a.href = info[Object.keys(info)[i]]["href"]
@@ -194,7 +224,7 @@ function dropDown (parentId, options){
 //nav("div6", {"text": {"href": "#", "icon": "fa-user"}, "text2": {"href": "#", "icon": "fa-spa"}});
 
 function setBar(fill, slider) {
-    fill.style.width = (slider.value - 2) + "%";
+    fill.style.width = slider.value + "%";
 }
 
 function slider(parentId, maxRange, funcCall="") {

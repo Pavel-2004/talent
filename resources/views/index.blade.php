@@ -31,6 +31,11 @@
         </div>
     </div>
 
+    <div id="slider"></div>
+
+    <div id="circle"></div>
+
+
 </div>
 </body>
 <script src="buttonComponent.js"></script>
