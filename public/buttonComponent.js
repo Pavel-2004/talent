@@ -125,8 +125,6 @@ function nav(parentId, info) {
         a.appendChild(text);
         li.appendChild(a);
         ul.appendChild(li);
-
-
     }
 
     /*
@@ -195,7 +193,9 @@ function dropDown (parentId, options){
 //multipleChoice("div4", "text", ["Answer1", "Answer2", "Answer3"]);
 //nav("div6", {"text": {"href": "#", "icon": "fa-user"}, "text2": {"href": "#", "icon": "fa-spa"}});
 
-
+function setBar(fill, slider) {
+    fill.style.width = (slider.value - 2) + "%";
+}
 
 function slider(parentId, maxRange, funcCall="") {
     const slider = document.createElement("input");
