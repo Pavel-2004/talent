@@ -10,7 +10,7 @@ let uniqueID = () => {
 
 function inputField(parentId, type, inputText, iconClass, topMargin = 0) {
     const field = document.createElement("div");
-    if(topMargin){
+    if (topMargin) {
         field.style.marginTop = topMargin + "px";
     }
 
@@ -26,7 +26,6 @@ function inputField(parentId, type, inputText, iconClass, topMargin = 0) {
     icon.className = "icon " + iconClass;
     checkmark.className = "checkmark fas fa-check";
     input.placeholder = inputText
-
 
 
     field.appendChild(icon);
@@ -69,11 +68,10 @@ let navIcons = ["fa-user", "fa-spa", "fa-search", "fa-play-circle"];
 let navTexts = ["Profile", "Self Relaxation", "Realization", "Video Interpretation"];
 
 
-
-function button(parentId, text, func, specialCLasses, top = 0){
+function button(parentId, text, func, specialCLasses, top = 0) {
     button = document.createElement("button")
     button.classList.add("button")
-    if(top){
+    if (top) {
         button.style.marginTop = top + "px"
     }
 
@@ -87,31 +85,20 @@ function button(parentId, text, func, specialCLasses, top = 0){
 }
 
 
-function circle(parentId, question, answers) {
-    const mcParent = document.createElement("div");
-    const id = uniqueID();
-    const questionText = document.createElement("h2")
-    questionText.innerText = question
-    for (let i = 0; i < answers.length; i++) {
-        const answer = document.createElement("div");
-        const input = document.createElement("input");
-        const label = document.createElement("label");
-        input.type = "radio";
-        input.name = id;
+function circle(parentId, bars) {
+    const circle = document.createElement("div");
+    circle.classList.add("circle");
 
-        const labelText = document.createTextNode(answers[i].toString());
-        label.appendChild(labelText);
-
-        answer.appendChild(input);
-        answer.appendChild(label);
-        mcParent.appendChild(answer);
+    for (let i = 0; i < bars; i++) {
+        const bar = document.createElement("div");
+        bar.classList.add("bar");
+        bar.style.transform = "rotate(" + i * 10 + "deg)";
+        circle.appendChild(bar);
     }
 
-    mcParent.className = "mc-parent";
 
     const parentDiv = document.getElementById(parentId);
-    parentDiv.appendChild(questionText)
-    parentDiv.appendChild(mcParent);
+    parentDiv.appendChild(circle)
 }
 
 /*
@@ -132,7 +119,7 @@ function nav(parentId, info) {
     for (let i = 0; i < Object.keys(info).length; i++) {
         const li = document.createElement("li");
         li.className = "list-item"
-        if(i==0){
+        if (i == 0) {
             li.classList.add("active")
         }
 
@@ -193,9 +180,9 @@ function nav(parentId, info) {
     parentDiv.appendChild(nav);
 }
 
-function dropDown (parentId, options){
+function dropDown(parentId, options) {
     const container = document.createElement("div");
-    container.className="dropdown-container";
+    container.className = "dropdown-container";
     const select = document.createElement("select");
     for (let i = 0; i < options.length; i++) {
         const option = document.createElement("option");
@@ -227,14 +214,14 @@ function setBar(fill, slider) {
     fill.style.width = slider.value + "%";
 }
 
-function slider(parentId, maxRange, funcCall="") {
+function slider(parentId, maxRange, funcCall = "") {
     const slider = document.createElement("input");
     slider.type = "range";
     slider.min = "0";
     slider.max = maxRange;
     slider.value = "30"
     slider.classList.add("slider")
-    slider.setAttribute("onchange",funcCall);
+    slider.setAttribute("onchange", funcCall);
 
 
     const bar = document.createElement("span");
@@ -245,7 +232,9 @@ function slider(parentId, maxRange, funcCall="") {
 
     bar.appendChild(fill);
 
-    slider.addEventListener("input", function(){setBar(fill, slider)});
+    slider.addEventListener("input", function () {
+        setBar(fill, slider)
+    });
 
     setBar(fill, slider);
 
@@ -258,11 +247,13 @@ function slider(parentId, maxRange, funcCall="") {
 
 //------------------------------------------------------------------
 const listItem = document.querySelectorAll('.list-item');
+
 function activeLink() {
     listItem.forEach((item) =>
         item.classList.remove('active'));
     this.classList.add('active');
 }
+
 listItem.forEach((item) =>
     item.addEventListener('click', activeLink));
 

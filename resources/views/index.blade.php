@@ -9,41 +9,41 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<div class="container">
-    <div class="row justify-content-center">
-        <h3 class="text-center ">Login</h3>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-4" id="userContainer">
+{{--<div class="container">--}}
+{{--    <div class="row justify-content-center">--}}
+{{--        <h3 class="text-center ">Login</h3>--}}
+{{--    </div>--}}
+{{--    <div class="row justify-content-center">--}}
+{{--        <div class="col-4" id="userContainer">--}}
 
-        </div>
+{{--        </div>--}}
 
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-4" id="passwordContainer">
+{{--    </div>--}}
+{{--    <div class="row justify-content-center">--}}
+{{--        <div class="col-4" id="passwordContainer">--}}
 
-        </div>
+{{--        </div>--}}
 
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-4" id="button">
+{{--    </div>--}}
+{{--    <div class="row justify-content-center">--}}
+{{--        <div class="col-4" id="button">--}}
 
-        </div>
-    </div>
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <form class="range-field">--}}
+{{--        <input type="range" min="0" max="100" />--}}
+{{--    </form>--}}
 
-    <div id="slider"></div>
+{{--    <div id="slider"></div>--}}
 
-    <div id="circle"></div>
+<div id="circle" style="margin-top: 10rem"></div>
 
-
-    <div class="row justify-content-center">
-        <div class="col-12" id="slider">
-
-        </div>
-    </div>
+{{--    <div class="circle"></div>--}}
 
 
-</div>
+
+
+{{--</div>--}}
 </body>
 <script src="buttonComponent.js"></script>
 <script src="loginDraw.js"></script>

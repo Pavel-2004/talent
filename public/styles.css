@@ -386,6 +386,11 @@ h2 {
     height: 0.5rem;
     border-radius: 50vh;
     background: transparent;
+    padding: 0;
+}
+
+.no-padding{
+    padding: 0;
 }
 
 .slider::-webkit-slider-thumb {
@@ -397,6 +402,7 @@ h2 {
     box-shadow: var(--floating-shadow);
     position: relative;
     z-index: 3;
+    pointer-events: none;
 }
 
 .slider::-webkit-slider-thumb:hover {
@@ -414,12 +420,36 @@ h2 {
     border-radius: 50vh;
     overflow: hidden;
     z-index: 1;
+    pointer-events: none;
+
 }
 
 .fill {
     display: block;
     width: 50%;
     height: 100%;
+    pointer-events: none;
     background: var(--gradient-orange);
     box-shadow: -2px -2px 4px #FFD9BC, 2px 2px 4px #D7863B, 1px 1px 7px #EBECF0;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    box-shadow: var(--floating-shadow);
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.bar{
+    position: absolute;
+    transform-origin: bottom;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 200px;
+    box-shadow: var(--floating-shadow-shallow);
+    z-index: -1;
 }
