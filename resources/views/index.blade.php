@@ -40,6 +40,11 @@
 
 {{--    <div class="circle"></div>--}}
 
+<<<<<<< HEAD
+=======
+    <div class="row justify-content-center">
+        <div class="col-6" id="slider">
+>>>>>>> 7673938667161022a61ceb5449f1cd50877d9546
 
 
 
