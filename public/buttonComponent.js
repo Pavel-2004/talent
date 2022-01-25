@@ -85,19 +85,29 @@ function button(parentId, text, func, specialCLasses, top = 0) {
 }
 
 
-function circle(parentId, bars) {
+function circle(parentId, bars, maxHeight) {
     const circle = document.createElement("div");
     circle.classList.add("circle");
+    // let width = circle.offsetHeight;
+    // let width = circle.getBoundingClientRect();
+    let width = 200;
+    console.log(width);
 
-    for (let i = 0; i < bars; i++) {
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.style.position = "relative";
+
+    for (let i = 0; i < Object.keys(bars).length; i++) {
         const bar = document.createElement("div");
         bar.classList.add("bar");
         bar.style.transform = "rotate(" + i * 10 + "deg)";
-        circle.appendChild(bar);
+        bar.setAttribute("data-tooltip", bars[Object.keys(bars)[i]].info.toString());
+        bar.setAttribute("rotation-compensation", (i * -10).toString());
+        let h = (width/2) + (bars[Object.keys(bars)[i]].val/100)*maxHeight;
+        bar.style.height = h + "px";
+        parentDiv.appendChild(bar);
     }
 
 
-    const parentDiv = document.getElementById(parentId);
     parentDiv.appendChild(circle)
 }
 
@@ -213,6 +223,8 @@ function dropDown(parentId, options) {
 function setBar(fill, slider) {
     fill.style.width = slider.value + "%";
 }
+
+
 
 function slider(parentId, maxRange, funcCall = "") {
     const slider = document.createElement("input");
