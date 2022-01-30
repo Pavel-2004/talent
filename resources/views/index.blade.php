@@ -38,6 +38,12 @@
 
 <div id="circle" style="margin-top: 10rem"></div>
 
+{{--    <div class="circle"></div>--}}
+
+
+
+
+{{--</div>--}}
 </body>
 <script src="buttonComponent.js"></script>
 <script src="loginDraw.js"></script>
