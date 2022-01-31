@@ -6,22 +6,27 @@
 
 @section("main-html")
 
-@endsection
-
-<div class="row justify-content-center" id="circle">
-
-</div>
 <div class="row justify-content-center" id="blackText">
 </div>
 <div class="row justify-content-center" id="orangeText">
 
 </div>
-<div class="row justify-content-center" id="username"></div>
-<div class="row justify-content-center" id="password"></div>
+<div class="row justify-content-center" id="smallText">
+
+</div>
 <div class="row justify-content-center" id="button">
 
 </div>
+<div class="row justify-content-center" style="padding-top: 15px;">
+
+    <div class="col-6" id="circleNav">
+
+    </div>
+</div>
+
+@endsection
+
 @section("js")
     <script src="buttonComponent.js"></script>
-    <script src="loginDraw.js"></script>
+    <script src="aboutOne.js"></script>
 @endsection("js")

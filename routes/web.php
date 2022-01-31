@@ -20,3 +20,24 @@ Route::get('/', function () {
 Route::get("/login", function (){
     return view("index");
 });
+
+Route::get("/setup", function (){
+    return view("setup");
+});
+
+Route::get("/setup/new-test", function(){
+    return view("newTest");
+});
+
+Route::get("about-one", function(){
+    return view("about-one");
+});
+
+
+Route::get("about-two", function (){
+    return view("about-two");
+});
+
+Route::get("about-three", function (){
+    return view("about-three");
+});
