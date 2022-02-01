@@ -3,7 +3,7 @@
 @section("css")
     <link rel="stylesheet" href="css/webfonts/all.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
-
+@endsection()
 @section("main-html")
 
 
@@ -33,4 +33,4 @@
 @section("js")
     <script src="buttonComponent.js"></script>
     <script src="aboutOne.js"></script>
-@endsection("js")
+@endsection()

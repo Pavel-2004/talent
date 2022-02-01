@@ -41,3 +41,12 @@ Route::get("about-two", function (){
 Route::get("about-three", function (){
     return view("about-three");
 });
+
+
+Route::get("get-started", function (){
+    return view("get-started");
+});
+
+Route::get("faq", function (){
+    return view("faq");
+});

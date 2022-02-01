@@ -2,7 +2,7 @@
 
 :root {
     --border-radius: 1.5rem;
-    --padding: 1rem 3rem;
+    --padding: 1rem 5rem;
     --floating-shadow: 3px 3px 5px rgba(94, 104, 121, 0.28),
     -3px -3px 7px rgba(255, 255, 255, 0.73),
     inset 3px 3px 7px rgba(255, 255, 255, 0.73),
@@ -109,9 +109,15 @@ img{
 
 }
 
+.blackTextTitle{
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+
+
 .smallText{
     color: rgba(166, 172, 187, 1);
-    max-width: 40%;
+    max-width: 80%;
     font-size: 1.2rem;
 }
 

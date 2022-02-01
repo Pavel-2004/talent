@@ -164,6 +164,13 @@ function createBlackText(parentId, context){
     document.getElementById(parentId).append(h2)
 }
 
+function createBlackTextTitle(parentId, context){
+    h2 = document.createElement("h2")
+    h2.classList.add("blackTextTitle")
+    h2.innerText = context
+    document.getElementById(parentId).append(h2)
+}
+
 
 function createSmallText(parentId, context){
     p = document.createElement("p")

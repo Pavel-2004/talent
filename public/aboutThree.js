@@ -1,5 +1,5 @@
 function next(){
-
+    window.location.href = "get-started"
 }
 
 
