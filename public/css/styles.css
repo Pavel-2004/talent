@@ -28,7 +28,7 @@
     --gradient-vertical: linear-gradient(0deg, #FECC1C 12.2%, #EC3B46 88.1%);
     --color: #464c4e;
     --gradient-orange: linear-gradient(90deg, #FFA667 0%, #FB7A01 74.13%);
-    --range: #FB7A01;
+    --orange: #FB7A01;
 }
 
 * {
@@ -674,6 +674,7 @@ img{
     display: inline;
     border-radius: var(--border-radius);
     height: 100px;
+    padding: 10px 10px;
 }
 
 .text-container h2 {
@@ -692,6 +693,7 @@ img{
     border-radius: var(--border-radius);
     box-shadow: var(--embed-shadow-shallow);
     padding: 1rem 2rem;
+    text-align: center;
 }
 
 .tag.active{
