@@ -18,9 +18,9 @@
 <body>
 
     <div class="container">
-        <div class="col-12 col-lg-6">
+{{--        <div class="col-12 col-lg-6 ">--}}
             @yield("main-html")
-        </div>
+{{--        </div>--}}
     </div>
 </body>
 </html>

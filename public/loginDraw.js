@@ -26,10 +26,12 @@
 
 
 //nav("nav", ["#!", "#!", "#!", "#!"], "Profile");
-circle_decal("circle", 150);
-for (let i = 0; i < document.getElementsByName("bar").length; i++) {
-    document.getElementsByClassName("bar")[i].remove()
-}
+// circle_decal("circle", 150);
+// for (let i = 0; i < document.getElementsByName("bar").length; i++) {
+//     document.getElementsByClassName("bar")[i].remove()
+// }
+
+bigIcon("circle", "fas fa-user-circle")
 
 createBlackText("blackText", "ЗАРЕЄСТРУВАТИСЯ")
 createOrangeText("orangeText", "А ТАЛАНТ-АССЕССМЕНТ")

@@ -1,28 +1,32 @@
 @extends("layouts.mainLayout")
 
 @section("css")
-    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/webfonts/all.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 
 @section("main-html")
 
-<div class="row justify-content-center" id="blackText">
-</div>
-<div class="row justify-content-center" id="orangeText">
 
-</div>
-<div class="row justify-content-center" id="smallText">
-
-</div>
-<div class="row justify-content-center" id="button">
-
-</div>
-<div class="row justify-content-center" style="padding-top: 15px;">
-
-    <div class="col-6" id="circleNav">
+    <div class="row justify-content-center">
+        <img src="../../svgs/earth-icon.svg" alt="earth icon" style="margin-bottom: 7%">
+    </div>
+    <div class="row justify-content-center" id="blackText">
+    </div>
+    <div class="row justify-content-center" id="orangeText" style="margin-bottom: 5%">
 
     </div>
-</div>
+    <div class="row justify-content-center" id="smallText" style="margin-bottom: 5%">
+
+    </div>
+    <div class="row justify-content-center" id="button" style="margin-bottom: 5%">
+
+    </div>
+    <div class="row justify-content-center" >
+
+        <div class="col-6" id="circleNav">
+
+        </div>
+    </div>
 
 @endsection
 

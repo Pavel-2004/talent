@@ -138,9 +138,9 @@ function createCircleNav(parentId, number){
         circle.classList.add("circle-invid")
 
         if(i==number){
-            circle.style.backgroundColor = "#FBA158";
+            circle.classList.add("active");
         } else{
-            circle.style.backgroundColor = "#EBECF0"
+            circle.classList.remove("active");
         }
         parentDiv.append(circle)
     }
@@ -176,7 +176,9 @@ function createSmallText(parentId, context){
 
 function createOrangeText(parentId, context){
     p = document.createElement("p")
-    p.classList.add("orangeText")
+    p.classList.add("gradient-text")
+    p.style.fontSize = "1.4rem";
+    p.style.fontWeight = "600";
     p.innerText = context
     document.getElementById(parentId).append(p)
 }
@@ -256,11 +258,55 @@ function circle_decal(parentId, maxHeight) {
     parentDiv.appendChild(circle)
 }
 
-//Test Uses
-//inputField("username", "text", "Email", "fas fa-envelope");
-// inputField("div3", "password", "Password", "fas fa-lock");
-// dropDown("dropdown", ["Option 1", "Option 2", "Longer Option", "Option 4"]);
-// multipleChoice("div4", ["Answer1", "Answer2", "Answer3"]);
+function bigIcon(parentId, iconClass) {
+    const circle = document.createElement("div");
+    const icon = document.createElement("span");
+    icon.className = iconClass;
+    icon.classList.add("gradient-text");
+    circle.classList.add("big-icon");
+    circle.appendChild(icon);
+
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.appendChild(circle);
+}
+
+function FAQ(parentId, question, text) {
+    const container = document.createElement("div");
+    container.classList.add("FAQ-container");
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("wrapper");
+    const toggle = document.createElement("button");
+    toggle.classList.add("toggle");
+    const icon = document.createElement("i");
+    icon.className = "fas fa-plus";
+    const content = document.createElement("div");
+    content.classList.add("content");
+
+    const contentText = document.createTextNode(text);
+    content.appendChild(contentText);
+    const questionText = document.createTextNode(question);
+    toggle.appendChild(questionText);
+
+    toggle.appendChild(icon);
+    wrapper.appendChild(toggle);
+    wrapper.appendChild(content);
+    container.appendChild(wrapper);
+
+    toggle.addEventListener('click', () => {
+        if (!toggle.classList.contains("active")) {
+            content.style.height = "calc(" + content.scrollHeight + "px + 1rem)";
+            toggle.classList.add("active");
+        } else {
+            content.style.height = "0px";
+            toggle.classList.remove("active");
+        }
+    });
+
+
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.appendChild(container);
+}
+
 
 
 //------------------------------------------------------------------

@@ -6,15 +6,18 @@
 
 @section("main-html")
 
+    <div class="row justify-content-center">
+        <img src="../../svgs/lock-icon.svg" alt="earth icon" style="margin-bottom: 7%">
+    </div>
     <div class="row justify-content-center" id="blackText">
     </div>
-    <div class="row justify-content-center" id="orangeText">
+    <div class="row justify-content-center" id="orangeText" style="margin-bottom: 5%">
 
     </div>
-    <div class="row justify-content-center" id="smallText">
+    <div class="row justify-content-center" id="smallText" style="margin-bottom: 5%">
 
     </div>
-    <div class="row justify-content-center" id="button">
+    <div class="row justify-content-center" id="button" style="margin-bottom: 5%">
 
     </div>
     <div class="row justify-content-center" style="padding-top: 15px;">
