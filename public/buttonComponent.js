@@ -316,6 +316,56 @@ function FAQ(parentId, question, text) {
 
 
 
+
+
+
+
+function card (parentId, imgSrc, text1, text2){
+    const container = document.createElement("div");
+    container.classList.add("container-div");
+    container.classList.add("card-container");
+    const img = document.createElement("img");
+    img.setAttribute("src", imgSrc);
+
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("text-container");
+    const firstText = document.createElement("h2");
+
+    firstText.appendChild(document.createTextNode(text1.toString()));
+
+    const secondText = document.createElement("p");
+    secondText.classList.add("gradient-text");
+
+    secondText.appendChild(document.createTextNode(text2.toString()));
+
+    container.appendChild(img);
+
+    textContainer.appendChild(firstText);
+    textContainer.appendChild(secondText);
+
+    container.appendChild(textContainer);
+
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.appendChild(container);
+}
+
+function tag (parentId, text, isActive){
+    const tag = document.createElement("h2");
+    tag.appendChild(document.createTextNode(text.toString()));
+    tag.classList.add("tag");
+
+    if(isActive){
+        tag.classList.add("active");
+    }
+
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.appendChild(tag);
+}
+
+
+
+
+
 //------------------------------------------------------------------
 const listItem = document.querySelectorAll('.list-item');
 

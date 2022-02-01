@@ -28,6 +28,7 @@
     --gradient-vertical: linear-gradient(0deg, #FECC1C 12.2%, #EC3B46 88.1%);
     --color: #464c4e;
     --gradient-orange: linear-gradient(90deg, #FFA667 0%, #FB7A01 74.13%);
+    --range: #FB7A01;
 }
 
 * {
@@ -647,4 +648,52 @@ img{
 .FAQ-container .toggle.active::after{
     top: 3.5rem;
     opacity: 1;
+}
+
+/*CARD*/
+
+.card-container {
+    padding: 2rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 5rem;
+    align-items: center;
+}
+
+.text-container {
+    height: 100%;
+    width: 100%;
+    max-width: 15rem;
+    text-align: justify;
+}
+
+.card-container img {
+    box-shadow: var(--embed-shadow);
+    display: inline;
+    border-radius: var(--border-radius);
+    height: 100px;
+}
+
+.text-container h2 {
+    font-weight: 600;
+}
+
+.text-container p {
+    font-weight: 400;
+}
+
+/*tag*/
+
+.tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    box-shadow: var(--embed-shadow-shallow);
+    padding: 1rem 2rem;
+}
+
+.tag.active{
+    outline: 2px var(--orange) solid;
 }
