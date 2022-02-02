@@ -9,9 +9,9 @@
     <div class="row justify-content-center" id="blackText">
 
     </div>
-
-    <img src="circle.png" width="500px" height="500px" alt="">
-
+    <!--
+    <img src="circle.png" width="300Px" height="300px" alt="">
+       -->
     <div class="row justify-content-center" id="orangeText">
 
     </div>

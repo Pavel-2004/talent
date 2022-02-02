@@ -50,3 +50,7 @@ Route::get("get-started", function (){
 Route::get("faq", function (){
     return view("faq");
 });
+
+Route::get("overview", function (){
+    return view("overview");
+});
