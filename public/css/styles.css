@@ -82,6 +82,7 @@ img{
 /*BUTTON*/
 
 
+
 .button {
     padding: var(--padding);
     border: none;
@@ -103,10 +104,40 @@ img{
     box-shadow: var(--embed-shadow);
 }
 
+
+.button-orange{
+    padding: var(--padding);
+    border: none;
+    display: block;
+    color: orange;
+    border-radius: 50vh;
+    background: var(--background-color);
+    box-shadow: var(--floating-shadow);
+
+    transition: var(--transition);
+}
+
+.button-orange:hover {
+    box-shadow: var(--embed-shadow-shallow);
+}
+
+.button-orange:focus {
+    outline: none;
+    box-shadow: var(--embed-shadow);
+}
+
 /*TEXT*/
 .blackText{
     font-family: sans-serif;
+}
 
+
+.greyTitle{
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #757E95;
 
 }
 
@@ -115,11 +146,21 @@ img{
     font-size: 3rem;
 }
 
+.verySmallText{
+    color: rgba(166, 172, 187, 1);
+    font-size: 0.9rem;
+}
 
 .smallText{
     color: rgba(166, 172, 187, 1);
     max-width: 80%;
     font-size: 1.2rem;
+}
+
+.smallTextIcon{
+    color: rgb(120, 124, 137);
+    max-width: 80%;
+    font-size: 0.5rem;
 }
 
 .orangeText{
@@ -275,7 +316,7 @@ img{
 /*NAV*/
 
 .circle-nav{
-    text-align: center;
+    s-align: center;
 }
 
 .circle-invid{
@@ -307,7 +348,6 @@ img{
     align-items: center;
     border-radius: var(--border-radius);
     z-index: 2;
-
     transition: var(--transition);
 }
 
@@ -453,6 +493,93 @@ img{
 
 /*Circle*/
 
+.circle-border-first{
+    position: absolute;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.circle-border-first-active{
+    position: absolute;
+    background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
+    width: 100%;
+    border-radius: 100%;
+
+}
+
+
+.iconText{
+    position: absolute;
+    left: 90%;
+    height: 10px;
+    font-weight: bold;
+
+}
+
+
+.icon-active{
+    position: absolute;
+    left: 90%;
+    color: orange;
+    font-weight: bold;
+}
+
+.circle-content{
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    left: 2%;
+    top: 2%;
+}
+
+.inside-text{
+    position: absolute;
+    width: 60%;
+    top: 5%;
+    left: 20%;
+}
+
+
+.inside-border {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    left: 20%;
+    border-radius: 100%;
+}
+
+.image{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 100%;
+    left: 5%;
+    top: 5%;
+    background-color: #DDE1E0;
+}
+
+
+.bottom-text {
+    position: absolute;
+
+    top: 81%;
+    left:15%;
+    width: 70%;
+}
+
+.inside-border-active{
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    left: 20%;
+    border-radius: 100%;
+    background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
+}
+
 .circle {
     width: 200px;
     height: 200px;
@@ -487,6 +614,171 @@ img{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.option-slider {
+    width: 90%;
+    margin: 19.2px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+
+.option-slider:focus{
+    outline: none;
+}
+
+.option-slider::-webkit-slider-runnable-track{
+    background: var(--gradient);
+    border: 0;
+    border-radius: 25px;
+    width: 100%;
+    height: 16.7px;
+    cursor: pointer;
+}
+
+.option-slider::-webkit-slider-thumb {
+    margin-top: -19.2px;
+    width: 50px;
+    height: 50px;
+    background: #dde1e0;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.option-slider::-webkit-slider-runnable-track{
+    background: var(--gradient);
+}
+
+.option-slider::-moz-range-track {
+    background: var(--gradient);
+    border: 0;
+    border-radius: 25px;
+    width: 100%;
+    height: 16.7px;
+    cursor: pointer;
+}
+
+
+.option-slider::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 20.2px 0;
+    color: transparent;
+    width: 100%;
+    height: 16.7px;
+    cursor: pointer;
+}
+.option-slider::-ms-fill-lower {
+    background: ;
+    border: 0;
+    border-radius: 50px;
+}
+.option-slider::-ms-fill-upper {
+    background: var(--gradient);
+    border: 0;
+    border-radius: 50px;
+}
+.option-slider::-ms-thumb {
+    width: 50px;
+    height: 50px;
+    background: #dde1e0;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+}
+.option-slider:focus::-ms-fill-lower {
+    background: var(--gradient);
+}
+.option-slider:focus::-ms-fill-upper {
+    background: var(--gradient);
+}
+
+.option-slider-zero {
+    width: 90%;
+    margin: 16.65px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+.option-slider-zero:focus {
+    outline: none;
+}
+.option-slider-zero::-webkit-slider-runnable-track {
+    background: #dde1da;
+    border: 2.3px solid rgba(0, 0, 36, 0.5);
+    border-radius: 25px;
+    width: 100%;
+    height: 16.7px;
+    cursor: pointer;
+}
+.option-slider-zero::-webkit-slider-thumb {
+    margin-top: -18.95px;
+    width: 50px;
+    height: 50px;
+    background: #dde1e0;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.option-slider-zero:focus::-webkit-slider-runnable-track {
+    background: #eff1ee;
+}
+.option-slider-zero::-moz-range-track {
+    background: #dde1da;
+    border: 2.3px solid rgba(0, 0, 36, 0.5);
+    border-radius: 25px;
+    width: 100%;
+    height: 16.7px;
+    cursor: pointer;
+}
+.option-slider-zero::-moz-range-thumb {
+    width: 50px;
+    height: 50px;
+    background: #dde1e0;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.option-slider-zero::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 17.65px 0;
+    color: transparent;
+    width: 100%;
+    height: 16.7px;
+    cursor: pointer;
+}
+option-slider-zero::-ms-fill-lower {
+    background: #cbd1c6;
+    border: 2.3px solid rgba(0, 0, 36, 0.5);
+    border-radius: 50px;
+}
+option-slider-zero::-ms-fill-upper {
+    background: #dde1da;
+    border: 2.3px solid rgba(0, 0, 36, 0.5);
+    border-radius: 50px;
+}
+option-slider-zero::-ms-thumb {
+    width: 50px;
+    height: 50px;
+    background: #dde1e0;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+}
+option-slider-zero:focus::-ms-fill-lower {
+    background: #dde1da;
+}
+option-slider-zero:focus::-ms-fill-upper {
+    background: #eff1ee;
+}
+
 
 .bar {
     position: absolute;
@@ -668,6 +960,14 @@ img{
     max-width: 15rem;
     text-align: justify;
 }
+
+
+.greyCard {
+    border-radius: var(--border-radius);
+    box-shadow: var(--floating-shadow);
+    background-color: var(--background-color);
+}
+
 
 .card-container img {
     box-shadow: var(--embed-shadow);

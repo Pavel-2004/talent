@@ -22,7 +22,7 @@
     </div>
     <div class="row justify-content-center" style="padding-top: 15px;">
 
-        <div class="col-6" id="circleNav">
+        <div class="col-6" id="circleNav" style="text-align: center;">
 
         </div>
     </div>

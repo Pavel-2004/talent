@@ -1,4 +1,4 @@
-nav("navBar", ["#", "#", "#", "#"], "Profile")
+nav("navBar", ["#", "overview", "#", "#"], "Profile")
 createBlackTextTitle("blackText", "FAQs")
 createOrangeText("orangeText", "Heading for faq")
 FAQ("faq1", "Question 1", "Answer to question abibabe")

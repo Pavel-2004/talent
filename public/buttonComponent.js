@@ -151,7 +151,7 @@ function createCircleNav(parentId, number){
 function createButton(parentId, context, action){
     parent = document.getElementById(parentId)
     button = document.createElement("button")
-    button.classList.add("button")
+    button.classList.add("button-orange")
     button.innerText = context
     button.setAttribute("onclick", action);
     parent.append(button)
@@ -159,6 +159,7 @@ function createButton(parentId, context, action){
 
 function createBlackText(parentId, context){
     h2 = document.createElement("h2")
+    h2.classList.add("text-center")
     h2.classList.add("blackText")
     h2.innerText = context
     document.getElementById(parentId).append(h2)
@@ -174,7 +175,7 @@ function createBlackTextTitle(parentId, context){
 
 function createSmallText(parentId, context){
     p = document.createElement("p")
-    p.classList.add("smallText")
+    p.classList.add("verySmallText")
     p.classList.add("text-center")
     p.innerText = context
 
@@ -218,6 +219,27 @@ function slider(parentId, maxRange, funcCall = "") {
     parentDiv.style.position = "relative";
     parentDiv.appendChild(slider);
     parentDiv.appendChild(bar);
+}
+
+
+
+
+function optionSlider(parentId, maxRange, precent) {
+    slider = document.createElement("input")
+    slider.type = "range"
+    slider.value = precent
+    slider.min = 1
+    slider.max = 100
+
+    if(precent == 0){
+        slider.classList.add("option-slider-zero")
+        slider.disabled = true;
+    } else{
+        slider.classList.add("option-slider")
+        slider.disabled = true;
+    }
+
+    document.getElementById(parentId).append(slider)
 }
 
 function circle(parentId, bars, maxHeight) {
@@ -320,6 +342,154 @@ function FAQ(parentId, question, text) {
 
 
 
+function tag (parentId, text, isActive){
+    const tag = document.createElement("h2");
+    tag.appendChild(document.createTextNode(text.toString()));
+    tag.classList.add("tag");
+
+    if(isActive){
+        tag.classList.add("active");
+    }
+
+    const parentDiv = document.getElementById(parentId);
+    parentDiv.appendChild(tag);
+}
+
+function metoticIcon(parentId, active, watched){
+
+    outerDiv = document.createElement("div")
+    if(active){
+        outerDiv.classList.add("circle-border-first-active")
+    } else{
+        outerDiv.classList.add("circle-border-first")
+    }
+
+
+
+    icon = document.createElement("i")
+    icon.classList.add("fas")
+    icon.classList.add("fa-user-alt")
+    icon.classList.add("fa-lg")
+    if(watched){
+        icon.classList.add("icon-active")
+    } else{
+        icon.classList.add("iconText")
+    }
+    icon.classList.add("iconText")
+    outerDiv.append(icon)
+
+
+    innerDiv = document.createElement("div")
+    innerDiv.classList.add("circle-content")
+
+    insideDiv = document.createElement("div")
+    insideDiv.classList.add("inside-text")
+    insideDiv.classList.add("text-center")
+    insideDiv.classList.add("smallTextIcon")
+    insideDiv.innerText = "Конституційний аналіз і Фізіогноміка"
+
+    innerDiv.append(insideDiv)
+
+    insideCircle = document.createElement("div")
+    if(active){
+        insideCircle.classList.add("inside-border-active")
+    } else{
+        insideCircle.classList.add("inside-border")
+    }
+
+    insideImgDiv = document.createElement("div")
+    insideImgDiv.classList.add("image")
+    insideCircle.append(insideImgDiv)
+    innerDiv.append(insideCircle)
+
+    bottomText = document.createElement("div")
+    bottomText.classList.add("bottom-text")
+    bottomText.classList.add("text-center")
+    bottomText.classList.add("smallTextIcon")
+    bottomText.innerText = "10 XB"
+    innerDiv.append(bottomText)
+
+
+    outerDiv.append(innerDiv)
+    document.getElementById(parentId).append(outerDiv)
+    outerDiv.style.height = outerDiv.clientWidth + "px"
+    document.getElementById(parentId).style.height = outerDiv.clientWidth + "px"
+}
+
+
+function cardWithText(parentId, title, text){
+    const container = document.createElement("div");
+    container.classList.add("container-div")
+    container.classList.add("card-container");
+    container.classList.add("row")
+    container.classList.add("justify-content-center")
+
+    innerCols = document.createElement("div")
+    innerCols.classList.add("col-12")
+    container.append(innerCols)
+
+    titleRow = document.createElement("div")
+    titleRow.classList.add("row")
+    innerCols.append(titleRow)
+
+    titleText = document.createElement("h2")
+    titleRow.append(titleText)
+    titleText.innerText = title
+
+
+    parRow = document.createElement("div")
+    parRow.classList.add("row")
+
+    parText = document.createElement("p")
+    parText.innerText = text
+    parRow.append(parText)
+
+
+    innerCols.append(parRow)
+
+    document.getElementById(parentId).append(container)
+}
+
+function cardText(parentId, title, text){
+    container = document.createElement("div")
+    container.classList.add("greyCard")
+    container.classList.add("row")
+
+    colContainer = document.createElement("div")
+    colContainer.classList.add("col-12")
+    colContainer.classList.add("greyCard")
+
+    container.append(colContainer)
+
+    titleRow = document.createElement("div")
+    titleRow.classList.add("row")
+    titleRow.classList.add("justify-content-center")
+
+    colContainer.append(titleRow)
+
+    titleContainer = document.createElement("h2")
+    titleContainer.classList.add("greyTitle")
+    titleContainer.classList.add("text-center")
+    titleContainer.innerText = title
+    titleRow.append(titleContainer)
+
+
+    paragraphRow = document.createElement("div")
+    paragraphRow.classList.add("row")
+    paragraphRow.classList.add("justify-content-center")
+    colContainer.append(paragraphRow)
+
+    paragraphContainer = document.createElement("p")
+    paragraphContainer.classList.add('text-center')
+    paragraphContainer.innerText = text
+    paragraphRow.append(paragraphContainer)
+
+    document.getElementById(parentId).append(container)
+
+
+}
+
+
 function card (parentId, imgSrc, text1, text2){
     const container = document.createElement("div");
     container.classList.add("container-div");
@@ -349,18 +519,7 @@ function card (parentId, imgSrc, text1, text2){
     parentDiv.appendChild(container);
 }
 
-function tag (parentId, text, isActive){
-    const tag = document.createElement("h2");
-    tag.appendChild(document.createTextNode(text.toString()));
-    tag.classList.add("tag");
 
-    if(isActive){
-        tag.classList.add("active");
-    }
-
-    const parentDiv = document.getElementById(parentId);
-    parentDiv.appendChild(tag);
-}
 
 
 

@@ -54,3 +54,11 @@ Route::get("faq", function (){
 Route::get("overview", function (){
     return view("overview");
 });
+
+Route::get("overview-specific", function (){
+    return view("overview-specific");
+});
+
+Route::get("overview-specific/method", function (){
+    return view("method");
+});

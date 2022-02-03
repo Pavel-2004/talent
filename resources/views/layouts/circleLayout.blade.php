@@ -18,6 +18,7 @@
 <body>
 
     <div class="container">
+        <h
 {{--        <div class="col-12 col-lg-6 ">--}}
             @yield("main-html")
 {{--        </div>--}}
