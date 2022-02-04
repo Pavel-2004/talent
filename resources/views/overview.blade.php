@@ -16,7 +16,7 @@
     </div>
 
     <div class="row justify-content-center" id="orangeText" style="margin-bottom: 5%">
-a
+
     </div>
     <div class="row justify-content-center" id="circle">
         <img src="circle.png" width="150px" height="150px" alt="">
@@ -28,7 +28,7 @@ a
 
 
 
-    <div class="row justify-content-center" style="height: 350px; overflow-y: scroll; margin-bottom: 50px;">
+    <div class="row justify-content-center" style="height: 350px; overflow-y: scroll; margin-bottom: 50px;" onclick="redirect()">
         <div class="col-12">
             <div class="row justify-content-center" id="titleText"></div>
             <div class="row justify-content-center" id="slider"></div>

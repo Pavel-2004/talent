@@ -10,18 +10,25 @@ optionSlider("slider2", 100, 0)
 
 
 metoticIcon("icon1", false, true)
+document.getElementById("icon1").setAttribute("onclick", "start()")
 metoticIcon("icon2", true, false)
+document.getElementById("icon2").setAttribute("onclick", "start()")
 metoticIcon("icon3", false, false)
+document.getElementById("icon3").setAttribute("onclick", "start()")
 metoticIcon("icon4", false, false)
-
+document.getElementById("icon4").setAttribute("onclick", "start()")
 
 metoticIcon("icon5", true, false)
+document.getElementById("icon5").setAttribute("onclick", "start()")
 metoticIcon("icon6", false, false)
+document.getElementById("icon6").setAttribute("onclick", "start()")
 metoticIcon("icon7", false, false)
+document.getElementById("icon7").setAttribute("onclick", "start()")
 metoticIcon("icon8", false, false)
+document.getElementById("icon8").setAttribute("onclick", "start()")
 
 
-nav("nav", ["faq", "overview", "#", "#"], "Self Relaxation")
+nav("nav", ["faq", "overview", "results", "profile"], "Methods")
 
 
 function display(view){
@@ -41,6 +48,6 @@ for (let i = 0; i < document.getElementsByClassName("display").length; i++) {
 
 
 
-function redirect(){
+function start(){
     window.location.href = "overview-specific/method"
 }

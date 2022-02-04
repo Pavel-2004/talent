@@ -59,8 +59,8 @@ function multipleChoice(parentId, answers) {
     const parentDiv = document.getElementById(parentId);
     parentDiv.appendChild(mcParent);
 }
-let navIcons = ["fa-user", "fa-spa", "fa-search", "fa-play-circle"];
-let navTexts = ["Profile", "Self Relaxation", "Realization", "Video Interpretation"];
+let navIcons = ["fa-cog", "fa-book-open", "fa-chart-bar", "fa-money-check-alt"];
+let navTexts = ["FAQ", "Methods", "Results", "Opportunities"];
 
 
 
@@ -399,8 +399,17 @@ function metoticIcon(parentId, active, watched){
 
     insideImgDiv = document.createElement("div")
     insideImgDiv.classList.add("image")
+    insideImgDiv.style.backgroundImage = "thumbnail.png"
     insideCircle.append(insideImgDiv)
     innerDiv.append(insideCircle)
+
+    image = document.createElement("img")
+    image.classList.add("image-circle")
+    image.src = "../thumbnail.png"
+    image.style.width = "100%"
+    image.style.height = "100%";
+
+    insideImgDiv.append(image)
 
     bottomText = document.createElement("div")
     bottomText.classList.add("bottom-text")
@@ -489,6 +498,72 @@ function cardText(parentId, title, text){
 
 }
 
+
+function createTalentIcon(parentId,  title){
+    colTen = document.createElement("div")
+    colTen.classList.add("col-10")
+
+    colOne = document.createElement("div")
+    colOne.classList.add("col-1")
+
+    talentIcon = document.createElement("div")
+    talentIcon.classList.add("row")
+    talentIcon.classList.add("justify-content-center")
+    talentIcon.classList.add("talent-icon")
+    colTen.append(talentIcon)
+
+    colFive = document.createElement("div")
+    colFive.classList.add("col-5")
+    talentIcon.append(colFive)
+
+    imageContainer = document.createElement("div")
+    imageContainer.classList.add("image-icon")
+    colFive.append(imageContainer)
+
+    image = document.createElement("img")
+    image.src = "thumbnail.png"
+    image.style.width = "100%"
+    image.style.height = "100%"
+    image.classList.add("square-img")
+    imageContainer.append(image)
+
+
+    colSix = document.createElement("div")
+    colSix.classList.add("col-6")
+    talentIcon.append(colSix)
+
+    titleRow = document.createElement("div")
+    titleRow.classList.add("row")
+    titleRow.classList.add("justify-content-center")
+    colSix.append(titleRow)
+
+    colTitle = document.createElement("div")
+    colTitle.classList.add("col-12")
+    titleRow.append(colTitle)
+
+    pTitle = document.createElement("p")
+
+    pTitle.innerText = title
+    colTitle.append(pTitle)
+
+    talentRow = document.createElement("div")
+    talentRow.classList.add("row")
+    talentRow.classList.add("justify-content-center")
+    colSix.append(talentRow)
+
+    colTalent = document.createElement("div")
+    colTalent.classList.add("col-12")
+    talentRow.append(colTalent)
+
+    pTalent = document.createElement("p")
+    pTalent.classList.add("text-gradient-orange")
+    pTalent.innerText = "Твої Таланти"
+    colTalent.append(pTalent)
+
+
+    document.getElementById(parentId).append(colTen)
+    document.getElementById(parentId).append(colOne)
+}
 
 function card (parentId, imgSrc, text1, text2){
     const container = document.createElement("div");

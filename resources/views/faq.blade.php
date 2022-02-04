@@ -20,15 +20,7 @@
 
     <div class="row justify-content-center" id="faq2" style="margin-top: 10px;">
     </div>
-    <div class="row justify-content-center" style="position: fixed; bottom: 10px;">
-        <div class="col-12">
-            <div class="row justify-content-center">
-                <div class="col-11" id="navBar">
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="row justify-content-center" id="navBar" style="position: fixed; bottom: 0; width: 100%;"></div>
 @endsection
 
 @section("js")

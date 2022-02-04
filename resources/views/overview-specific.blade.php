@@ -22,15 +22,25 @@
                     <div class="row justify-content-center display" id="view1">
                         <div class="col-12">
                             <div class="row justify-content-center">
-                                <div class="col-5" id="icon1"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon1"></div>
+                                </div>
                                 <div class="col-1"></div>
-                                <div class="col-5" id="icon2"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon2"></div>
+                                </div>
                             </div>
                             <div class="row justify-content-center" style="margin-top: 20px;">
 
-                                <div class="col-5" id="icon3"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon3"></div>
+                                </div>
                                 <div class="col-1"></div>
-                                <div class="col-5" id="icon4"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon4">
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -49,15 +59,31 @@
                     <div class="row justify-content-center display" id="view2">
                         <div class="col-12">
                             <div class="row justify-content-center">
-                                <div class="col-5" id="icon5"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon5">
+
+                                    </div>
+                                </div>
                                 <div class="col-1"></div>
-                                <div class="col-5" id="icon6"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon6">
+
+                                    </div>
+                                </div>
                             </div>
                             <div class="row justify-content-center" style="margin-top: 20px;">
 
-                                <div class="col-5" id="icon7"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon7">
+
+                                    </div>
+                                </div>
                                 <div class="col-1"></div>
-                                <div class="col-5" id="icon8"></div>
+                                <div class="col-5">
+                                    <div class="row justify-content-center" id="icon8">
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

@@ -1,5 +1,5 @@
 createOrangeText("orangeText", "МЕТОДИКА ТАЛАНТИ-АСЕССМЕНТ");
-nav("nav", ["faq", "overview", "#", "#"], "Self Relaxation")
+nav("nav", ["../faq", "../overview", "../results", "../profile"], "Methods")
 
 createSmallText("sliderInfo", "§1. Генетичний/ Природний потенціал")
 optionSlider("slider", 100, 25);

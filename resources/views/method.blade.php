@@ -28,11 +28,10 @@
                 </div>
             </div>
             <div class="row justify-content-center" style="margin-top: 20px;">
+
+                <div class="col-5" id="method"></div>
                 <div class="col-1"></div>
-                <div class="col-4" id="method"></div>
-                <div class="col-1"></div>
-                <div class="col-4" id="result"></div>
-                <div class="col-1"></div>
+                <div class="col-5" id="result"></div>
             </div>
         </div>
     </div>

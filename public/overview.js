@@ -8,6 +8,10 @@ createSmallText("titleText2", "§1. Генетичний/ Природний п�
 optionSlider("slider2", 100, 0)
 
 
-nav("navBar", ["faq", "", "#", "#"], "Self Relaxation")
+nav("navBar", ["faq", "overview", "results", "profile"], "Methods")
 //otherCircle
 
+
+function redirect(){
+    window.location.href = "overview-specific"
+}

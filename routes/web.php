@@ -62,3 +62,20 @@ Route::get("overview-specific", function (){
 Route::get("overview-specific/method", function (){
     return view("method");
 });
+
+
+Route::get("results", function (){
+    return view("results");
+});
+
+Route::get("profile", function (){
+    return view("profile");
+});
+
+Route::get("talent", function (){
+    return view("talent");
+});
+
+Route::get("talent-info", function (){
+    return view("talent-info");
+});

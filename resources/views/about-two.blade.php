@@ -3,7 +3,7 @@
 @section("css")
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/webfonts/all.css"/>
-
+@endsection
 @section("main-html")
 
     <div class="row justify-content-center">
