@@ -20,6 +20,9 @@
     </div>
     <div class="row justify-content-center" id="circle">
         <img src="circle.png" width="150px" height="150px" alt="">
+        <!-- editing-d -->
+        <p class="rectangle"></p>
+        <!--  -->
     </div>
     <div class="row justify-content-center" id="smallText" style="margin-top: 50px;">
 
