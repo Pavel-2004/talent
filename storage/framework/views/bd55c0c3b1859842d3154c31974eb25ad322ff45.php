@@ -6,19 +6,19 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection("main-html"); ?>
-    <div class="row justify-content-center" id="blackText">
+    <div class="row justify-content-center blackTextTitle-color" id="blackText">
 
     </div>
     <!--
     <img src="circle.png" width="300Px" height="300px" alt="">
        -->
-    <div class="row justify-content-center" id="orangeText">
+    <div class="row justify-content-center orangeText-pos2" id="orangeText">
 
     </div>
-    <div class="row justify-content-center" id="faq1">
+    <div class="row justify-content-center faq1" id="faq1">
     </div>
 
-    <div class="row justify-content-center" id="faq2" style="margin-top: 10px;">
+    <div class="row justify-content-center faq2" id="faq2" style="margin-top: 20px;">
     </div>
     <div class="row justify-content-center" id="navBar" style="position: fixed; bottom: 0; width: 100%;"></div>
 <?php $__env->stopSection(); ?>

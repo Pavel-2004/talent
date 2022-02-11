@@ -9,7 +9,7 @@
 
 <?php $__env->startSection("main-html"); ?>
     <div class="row justify-content-center" style="">
-        <div class="col-10" style="background-color: #DDE1E7; border-radius: 25px; border: solid; border-color: lightgrey;">
+        <div class="col-10 col10-bc" style=background-color: #DDE1E7; border-radius: 25px; border: solid; border-color: lightgrey;>
             <div class="row justify-content-center" style="padding-top: 50px;" id="orangeText">
             </div>
             <div class="row justify-content-center" id="blackText">
