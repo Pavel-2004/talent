@@ -14,13 +14,13 @@
     <div class="row justify-content-center" id="orangeText" style="margin-bottom: 5%">
 
     </div>
-    <div class="row justify-content-center" id="smallText" style="margin-bottom: 5%">
+    <div class="row justify-content-center smallText-pos" id="smallText" style="margin-bottom: 5%;">
 
     </div>
-    <div class="row justify-content-center" id="button" style="margin-bottom: 5%">
+    <div class="row justify-content-center button-pos" id="button" style="margin-bottom: 5%">
 
     </div>
-    <div class="row justify-content-center" style="padding-top: 15px;">
+    <div class="row justify-content-center circleNav-pos" style="padding-top: 15px; margin-top: 147px;">
 
         <div class="col-6" id="circleNav" style="text-align: center;">
 

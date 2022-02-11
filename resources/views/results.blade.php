@@ -36,13 +36,13 @@
     <div id="main" style="position: fixed; top: 25%; width: 100%; overflow-y: scroll;">
         <div class="row justify-content-center" id="title">
         </div>
-        <div class="row justify-content-center" id="talent1">
+        <div class="row justify-content-center " id="talent1">
 
         </div>
-        <div class="row justify-content-center" id="talentTwo" style="margin-top: 20px;">
+        <div class="row justify-content-center talent-pos" id="talentTwo" style="margin-top: 20px;">
 
         </div>
-        <div class="row justify-content-center" id="talentThree" style="margin-top: 20px;"></div>
+        <div class="row justify-content-center talent-pos" id="talentThree" style="margin-top: 20px;"></div>
     </div>
 
     <div class="row justify-content-center" style="position: fixed; width: 100%; bottom: 0;">

@@ -21,7 +21,7 @@
     <div class="row justify-content-center button-pos" id="button" style="margin-bottom: 5%">
 
     </div>
-    <div class="row justify-content-center circleNav-pos" >
+    <div class="row justify-content-center circleNav-pos" style="margin-top: 147px;" >
 
         <div class="col-6" id="circleNav" style="text-align: center;">
 
