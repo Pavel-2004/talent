@@ -1,0 +1,5 @@
+nav("navBar", ["faq", "overview", "results", "profile"], "FAQ")
+createBlackTextTitle("blackText", "FAQs")
+createOrangeText("orangeText", "Heading for faq")
+FAQ("faq1", "Question 1", "Answer to question abibabe")
+FAQ("faq2", "Question 2", "some more answers to question")

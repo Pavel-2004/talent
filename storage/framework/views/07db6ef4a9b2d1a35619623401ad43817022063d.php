@@ -12,7 +12,7 @@
 </head>
 <style>
     body{
-        background-color: #DDE1E0;
+        background-color: #EBECF0;
     }
 </style>
 <body>
@@ -26,5 +26,4 @@
 </html>
 
     <?php echo $__env->yieldContent("js"); ?>
-
 <?php /**PATH C:\xampp\htdocs\talent\resources\views/layouts/mainLayout.blade.php ENDPATH**/ ?>
