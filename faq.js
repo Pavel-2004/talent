@@ -1,0 +1,5 @@
+nav("navBar", ["faq", "overview", "results", "profile"], "FAQ")
+createBlackTextTitle("blackText", "FAQs")
+createOrangeText("orangeText", "ЗАГАЛЬНІ ПИТАННЯ")
+FAQ("faq1", "Що таке Talent Assessment?", "Answer to question abibabe")
+FAQ("faq2", "Як працює Талант-Асессмент?", "some more answers to question")
