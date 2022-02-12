@@ -817,7 +817,7 @@ p{
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.slider::-webkit-slider-runnable-track{
+/* .slider::-webkit-slider-runnable-track{
   background: linear-gradient(180deg, #FB01D3 0%, #FD7CAB 0.01%, #F76C95 0.02%, #F76D94 0.03%, #FBA158 48.44%, #FBD36C 99.97%, #FAE15F 99.98%, rgba(252, 195, 80, 0.328125) 99.99%, #FCD344 100%);
   box-shadow: -2px -2px 4px #FFD9BC, 1px 1px 7px #EBECF0;
   border-radius: 40px;
@@ -826,7 +826,7 @@ p{
 box-shadow: none;
 border: none;
 background: transparent;
-}
+} */
 /*  */
 .option-slider {
     width: 90%;
