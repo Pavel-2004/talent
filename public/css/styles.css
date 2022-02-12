@@ -802,6 +802,26 @@ p{
     transform: translate(-50%, -50%);
 }
 
+/*editing-d ето клас для input[type="range"] чтоб изменить background до thum */
+.slider{
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  border-radius: 5px;
+  background: var(--gradient);
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.slider::-webkit-slider-runnable-track{
+  background: var(--gradient);
+    background-size: 50%;
+    -webkit-appearance: none;
+box-shadow: none;
+border: none;
+background: transparent;
+}
+/*  */
 .option-slider {
     width: 90%;
     margin: 19.2px 0;
