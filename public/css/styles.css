@@ -944,6 +944,12 @@ border-radius: 40px;
   background-size: 50%;
   background-repeat: no-repeat;
 }
+.slider::-webkit-slider-thumb{
+  background: linear-gradient(147.42deg, rgba(64, 72, 93, 0.4) 6.32%, rgba(96, 106, 130, 0.4) 92.25%), linear-gradient(128deg, #E6E7ED -79.65%, #F7F8FA 151.25%);
+background-blend-mode: soft-light, normal;
+box-shadow: -7px -7px 16px #FAFBFC, 4px 3px 19px #BDC1D1, inset -1px -1px 16px #F5F6FA, inset 1px 1px 16px #E9EAF2;
+border-radius: 40px;
+}
 /* .slider::-webkit-slider-runnable-track{
   background: var(--gradient);
     background-size: 50%;
